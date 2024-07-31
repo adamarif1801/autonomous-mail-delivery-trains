@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Mail Delivery Trains</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Autonomous Mail Delivery Trains 🚂</h1>
+    <p id="nota">Note: It is pre-loaded with inputs and can be edited and change.</p>
+    <form id="networkForm">
+        <h2>Nodes </h2>
+        <textarea id="nodes" placeholder="Enter nodes, one per line"></textarea>
+
+        <h2>Edges</h2>
+        <textarea id="edges" placeholder="Enter edges in format: Name, Node1, Node2, JourneyTimeInMinutes"></textarea>
+
+        <h2>Trains</h2>
+        <textarea id="trains" placeholder="Enter trains in format: TrainName, CapacityInKg, StartingNode"></textarea>
+
+        <h2>Packages</h2>
+        <textarea id="packages" placeholder="Enter packages in format: PackageName, WeightInKg, StartingNode, DestinationNode"></textarea>
+
+        <button type="button" onclick="generateMoves()">Generate Moves</button>
+    </form>
+    <h2>Moves</h2>
+    <pre id="output"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
